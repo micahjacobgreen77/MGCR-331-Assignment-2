@@ -5,7 +5,7 @@ The dashboard visualizes regional and product sales data for a fictional superma
 across four U.S. cities (Boston, Los Angeles, New York, San Diego) over 2024–2025.
 
 ## 🔗 Live Site
-[View the dashboard here](https://your-username.github.io/your-repo-name)
+[View the dashboard here](https://your-username.github.io/MGCR-331-Assignment-2)
 
 ## 📄 Pages
 
