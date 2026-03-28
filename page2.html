@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annual Sales Trends</title>
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="style.css" />
+
+  
+  <style>
+
+    
+    .page-layout {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .main-content-trends {
+      flex: 3;
+    }
+
+    
+    .sidebar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar-box {
+      background-color: #D2F7FF;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .sidebar-box h2 {
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #2F426D;
+      margin-bottom: 16px;
+    }
+
+    
+    .sidebar-box ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .sidebar-box ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar-box ul li a {
+      color: #46639B;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .sidebar-box ul li a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .sidebar-chart-box {
+      background-color: #D2F7FF;
+      border-radius: 20px;
+      padding: 16px;
+    }
+
+    .sidebar-chart-box img {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      object-fit: contain;
+      display: block;
+      border-radius: 8px;
+    }
+
+    
+    .total-sales-box {
+      background-color: #D2F7FF;
+      border-radius: 16px;
+      padding: 14px 22px;
+      display: inline-block;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .total-sales-box h3 {
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #2F426D;
+      margin-bottom: 4px;
+    }
+
+    .total-sales-box p {
+      font-size: 22px;
+      font-weight: bold;
+      color: #4F8F80;
+      margin: 0;
+    }
+
+    
+    .year-section {
+      margin-bottom: 30px;
+    }
+
+    
+    .year-content {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .year-table-wrap {
+      flex: 1.2;
+    }
+
+    .year-chart-wrap {
+      flex: 1;
+    }
+
+    .year-chart-wrap img {
+      width: 100%;
+      height: auto;
+      max-height: 280px;
+      object-fit: contain;
+      display: block;
+      border-radius: 8px;
+      background-color: #D2F7FF;
+      padding: 10px;
+      border-radius: 16px;
+    }
+
+    
+    .sales-table-card {
+      background-color: #D2F7FF;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .sales-table-card h3 {
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #2F426D;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    
+    .sales-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    
+    .sales-table thead tr {
+      background-color: #D2F7FF;
+    }
+
+    .sales-table th {
+      font-size: 16px;
+      font-weight: bold;
+      color: #2F426D;
+      padding: 8px 12px;
+      text-align: center;
+    }
+
+    
+    .sales-table td {
+      font-size: 15px;
+      font-weight: bold;
+      padding: 8px 12px;
+      text-align: center;
+      color: #2F426D;
+    }
+
+    
+    .sales-table td:first-child {
+      color: #2F426D;
+    }
+
+    
+    .sales-table td:nth-child(2) {
+      color: #4F8F80;
+    }
+
+    
+    .sales-table td:nth-child(3) {
+      color: #46639B;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    
+    <header class="top-banner">
+      <div class="banner-left">
+        <h1>Annual Sales Trends</h1>
+      </div>
+      <nav class="banner-nav">
+        <a href="Index.html">Regional Performance</a>
+        
+        <a href="page2.html" class="active">Annual Sales Trends</a>
+        <a href="page3.html">Product Performance</a>
+      </nav>
+    </header>
+
+
+    
+    <div class="page-layout">
+
+
+      
+      <div class="main-content-trends">
+
+
+        
+        <div class="year-section">
+
+          
+          <div class="total-sales-box">
+            <h3>2025 Total Sales</h3>
+            <p>$57,502.07</p>
+          </div>
+
+          <div class="year-content">
+
+            
+            <div class="year-table-wrap">
+              <div class="sales-table-card">
+                <h3>2025 Sales by City</h3>
+
+                <table class="sales-table">
+                  
+                  <thead>
+                    <tr>
+                      <th>City</th>
+                      <th>Sales</th>
+                      <th>% of Total Sales</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    <tr>
+                      <td>Boston</td>
+                      <td>$15,155.86</td>
+                      <td>26.36%</td>
+                    </tr>
+                    <tr>
+                      <td>Los Angeles</td>
+                      <td>$15,064.30</td>
+                      <td>26.2%</td>
+                    </tr>
+                    <tr>
+                      <td>New York</td>
+                      <td>$13,695.56</td>
+                      <td>23.82%</td>
+                    </tr>
+                    <tr>
+                      <td>San Diego</td>
+                      <td>$13,586.35</td>
+                      <td>23.63%</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+
+            
+            <div class="year-chart-wrap">
+              
+              <img src="2025sales.png" alt="2025 Sales by City bar chart" />
+            </div>
+
+          </div>
+        </div>
+
+
+        
+        <div class="year-section">
+
+          
+          <div class="total-sales-box">
+            <h3>2024 Total Sales</h3>
+            <p>$66,385.44</p>
+          </div>
+
+          <div class="year-content">
+
+            
+            <div class="year-table-wrap">
+              <div class="sales-table-card">
+                <h3>2024 Sales by City</h3>
+
+                <table class="sales-table">
+                  <thead>
+                    <tr>
+                      <th>City</th>
+                      <th>Sales</th>
+                      <th>% of Total Sales</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Boston</td>
+                      <td>$17,042.91</td>
+                      <td>25.67%</td>
+                    </tr>
+                    <tr>
+                      <td>Los Angeles</td>
+                      <td>$16,807.47</td>
+                      <td>25.32%</td>
+                    </tr>
+                    <tr>
+                      <td>New York</td>
+                      <td>$17,337.22</td>
+                      <td>26.12%</td>
+                    </tr>
+                    <tr>
+                      <td>San Diego</td>
+                      <td>$15,197.84</td>
+                      <td>22.89%</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+
+            
+            <div class="year-chart-wrap">
+              
+              <img src="2024sales.png" alt="2024 Sales by City bar chart" />
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      
+      <div class="sidebar">
+
+        
+        <div class="sidebar-box">
+          <h2>External Resources</h2>
+          <ul>
+            <li><a href="https://www.boston.gov/" target="_blank">City of Boston</a></li>
+            <li><a href="https://lacity.gov/" target="_blank">City of Los Angeles</a></li>
+            <li><a href="https://www.nyc.gov/main" target="_blank">New York City</a></li>
+            <li><a href="https://www.sandiego.gov/" target="_blank">City of San Diego</a></li>
+            <li><a href="https://www.contextures.com/excelsampledatafoodsales.html#download" target="_blank">Food Excel Data</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="sidebar-chart-box">
+          
+          <img src="percentageofsales2025.png" alt="Percentage of Sales 2025 pie chart" />
+        </div>
+
+        
+        <div class="sidebar-chart-box">
+          
+          <img src="percentageofsales2024.png" alt="Percentage of Sales 2024 pie chart" />
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
